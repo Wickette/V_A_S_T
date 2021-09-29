@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    <p>Hello World!</p>
-</body>
-</html> 
+  </head>
+
+  <main>
+    <div class="header">
+      <h1>Muscle Monsters (or something)</h1>
+      <p>Fitness App</p>
+    </div>
+
+    <div class="topnav"></div>
+  </main>
+
+  <body>
+    <div class="row">
+      <div class="main">
+        <div class="row">
+          <div class="body">
+            <label for="body-list label">Choose a body part you would like to focus on :</label>
+            <select name="body-parts" id="body-areas" multiple>
+              <option value="Arms">Arms</option>
+              <option value="Shoulders">Shoulders</option>
+              <option value="Chest">Chest</option>
+              <option value="Back">Back</option>
+              <option value="Legs">Legs</option>
+              <option value="Abs">Abs</option>
+            </select>
+          </div>
+
+          <div class="time">
+            <label for="time-list label">Choose how long you would like to workout :
+            </label>
+            <select name="times" id="times-areas" multiple>
+              <option value="10">10 Minutes</option>
+              <option value="20">20 Minutes</option>
+              <option value="30">30 Minutes</option>
+              <option value="40">40 Minutes</option>
+              <option value="50">50 Minutes</option>
+              <option value="60">60 Minutes</option>
+            </select>
+          </div>
+          <button>Submit Selections</button>
+        </div>
+
+        <div class="row">
+            <div class="main">
+                <div class="userInput">
+                    <h3>Body for API Objects</h3>
+                <hr>
+                <br>
+                <p>use JS to dynamically insert..</p>
+                <p>Name of Exercise</p>
+                <p>description of exercise</p>
+                <p>equipment needed</p>
+            </div>
+        </div>
+    </div>
+      </div>
+
+      <div class="side">
+          <div class="row">
+              <h3>Quotes Section?</h3>
+              <p class="quotes">"patience is a virtue"</p>
+          </div>
+         <div class="row"> 
+             <div class="side">
+        <div class="exercise-img">
+            <img src="./placeholder-portrait.png" alt="body part labels">
+        </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
