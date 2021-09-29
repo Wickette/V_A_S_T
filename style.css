@@ -29,17 +29,42 @@
     flex: 40%;
     background-color: burlywood;
     padding: 20px;
+    height: auto;
+}
+.user{
+    margin-left: 40%;
+}
+.side .side-title{
+    text-align: center;
+}
+.side .calorieInput{
+    text-align: center;
+}
+.side .generatedMeal {
+    text-align: center;
+    margin-top: 20px;
+} 
+.side p{
+    text-align: center;
+    margin: 20px;
+}
+.side img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.red-text{
+    color: red;
+}
+.bold-text{
+    font-weight: bolder;
 }
 .body{
     flex: 50%;
-
 }
 .time{
      flex: 50%;
-}
-button{
-    margin-top: 20px;
-    margin-left: 40%;
 }
 .userInput, .exercise-img{
     margin-top: 100px;

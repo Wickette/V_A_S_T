@@ -24,6 +24,7 @@
           <div class="body">
             <label for="body-list label">Choose a body part you would like to focus on :</label>
             <select name="body-parts" id="body-areas" multiple>
+              <!-- https://jqueryui.com/selectable/ -->
               <option value="Arms">Arms</option>
               <option value="Shoulders">Shoulders</option>
               <option value="Chest">Chest</option>
@@ -32,26 +33,14 @@
               <option value="Abs">Abs</option>
             </select>
           </div>
-
-          <div class="time">
-            <label for="time-list label">Choose how long you would like to workout :
-            </label>
-            <select name="times" id="times-areas" multiple>
-              <option value="10">10 Minutes</option>
-              <option value="20">20 Minutes</option>
-              <option value="30">30 Minutes</option>
-              <option value="40">40 Minutes</option>
-              <option value="50">50 Minutes</option>
-              <option value="60">60 Minutes</option>
-            </select>
-          </div>
           <button>Submit Selections</button>
+
         </div>
 
         <div class="row">
             <div class="main">
                 <div class="userInput">
-                    <h3>Body for API Objects</h3>
+                  <h3>Body for API Objects</h3>
                 <hr>
                 <br>
                 <p>use JS to dynamically insert..</p>
@@ -60,22 +49,30 @@
                 <p>equipment needed</p>
             </div>
         </div>
-    </div>
       </div>
+    </div>
 
-      <div class="side">
-          <div class="row">
-              <h3>Quotes Section?</h3>
-              <p class="quotes">"patience is a virtue"</p>
-          </div>
-         <div class="row"> 
-             <div class="side">
-        <div class="exercise-img">
-            <img src="./placeholder-portrait.png" alt="body part labels">
+    <div class="side">
+<h3 style="text-align: center; padding-bottom: 50px;">Meal Generator</h3>
+        <div class="row" class="nutrition">
+            <div class="user">
+              <input type="text" placeholder="Enter your goal calories for the day" class="calorieInput">
+
+              <button class="calorie-submit">Submit</button>
+            </div>
         </div>
+
+        <div class="generatedMeal">Enter your daily calorie intake and hit submit for some food options!</div>
+
+            <div class="row"> 
+            <div class="side">
+            <div class="exercise-img"></div>
+          </div>
+        </div>
+
     </div>
+
     </div>
-      </div>
-    </div>
+    <script src="NutritionScript.js"></script>
   </body>
 </html>
