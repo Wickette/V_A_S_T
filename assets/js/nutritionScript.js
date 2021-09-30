@@ -3,7 +3,7 @@
     let calorieSubmit = document.querySelector(".calorie-submit")
 
 console.log(userCalorieInput.value)
-// 
+ 
 
 let getMeal = function(){
     let mealPlanURL = "https://api.spoonacular.com/mealplanner/generate/?apiKey=cdbf01ac8e2040d48cb558f6c520cc89&targetCalories="+ userCalorieInput.value.trim() +"&timeFrame=day"
@@ -74,9 +74,6 @@ let getMeal = function(){
         disclaimer.setAttribute("class", "red-text")
         generatedPlan.append(disclaimer)
     })
-
 }
 
-
 calorieSubmit.addEventListener("click", getMeal)
-
