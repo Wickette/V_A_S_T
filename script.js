@@ -8,7 +8,7 @@ let shoulders = document.querySelector('#shoulder');
 let calves = document.querySelector('#calves');
 let res1 = document.querySelector('#res1');
 let res2 = document.querySelector('#res2');
-
+// ss
 // Event listeners for buttons
 arms.addEventListener('click', function(){
     event.preventDefault();
