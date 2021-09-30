@@ -79,3 +79,20 @@ let getMeal = function(){
 
 
 calorieSubmit.addEventListener("click", getMeal)
+
+
+let arms = document.querySelector('select').children[0].label;
+
+fetch('https://wger.de/api/v2/exerciseinfo?limit=500')
+.then(function(response) {
+    return response.json();
+})
+.then(function(info) {
+    console.log(info);
+    for (let i = 0; i < info.length; i++) {
+        console.log(arms);
+        if (info.results[i].category.name === 'arms') {
+            console.log(arms);
+        }
+    }
+})
