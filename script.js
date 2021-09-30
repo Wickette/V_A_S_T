@@ -1,3 +1,4 @@
+// Query Selectors for buttons and display value
 let arms = document.querySelector('#arms');
 let legs = document.querySelector('#legs');
 let abs = document.querySelector('#abs');
@@ -8,19 +9,21 @@ let calves = document.querySelector('#calves');
 let res1 = document.querySelector('#res1');
 let res2 = document.querySelector('#res2');
 
-
+// Event listeners for buttons
 arms.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
+    //pick random number to offset value(this will show different result everytime button is clicked)
+    let num = Math.floor((Math.random()*100)+(Math.random()*10));
+    // fetch url
     fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
     .then(function(response) {
         return response.json();
     })
     .then(function(info) {
-        console.log(info);
+        // sort through all reults
         for (let i = 0; i < info.results.length; i++) {
         if (info.results[i].category == 8) {
-            console.log(info.results[i].name);
+            // display results
             res1.textContent = info.results[i].name;
             res2.textContent = info.results[i].description;
         }
@@ -30,7 +33,7 @@ arms.addEventListener('click', function(){
 
 legs.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
+    let num = Math.floor((Math.random()*100)+(Math.random()*10));
     fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
     .then(function(response) {
         return response.json();
@@ -49,7 +52,7 @@ legs.addEventListener('click', function(){
 
 abs.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
+    let num = Math.floor((Math.random()*100)+(Math.random()*100));
     fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
     .then(function(response) {
         return response.json();
@@ -68,7 +71,7 @@ abs.addEventListener('click', function(){
 
 chest.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
+    let num = Math.floor((Math.random()*100)+(Math.random()*100));
     fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
     .then(function(response) {
         return response.json();
@@ -87,7 +90,7 @@ chest.addEventListener('click', function(){
 
 back.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
+    let num = Math.floor((Math.random()*100)+(Math.random()*100));
     fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
     .then(function(response) {
         return response.json();
@@ -106,8 +109,8 @@ back.addEventListener('click', function(){
 
 shoulders.addEventListener('click', function(){
     event.preventDefault();
-    let num = Math.floor(Math.random()*100);
-    fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
+    let num = Math.floor((Math.random()*100)+(Math.random()*100));
+    fetch(`https://wger.de/api/v2/exercise?limit=70&offset=${num}`)
     .then(function(response) {
         return response.json();
     })
@@ -123,34 +126,3 @@ shoulders.addEventListener('click', function(){
 })
 })
 
-calves.addEventListener('click', function(){
-    event.preventDefault();
-    let num = Math.floor(Math.random()*100);
-    fetch(`https://wger.de/api/v2/exercise?limit=50&offset=${num}`)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(info) {
-        console.log(info);
-        for (let i = 0; i < info.results.length; i++) {
-        if (info.results[i].category == 14) {
-            console.log(info.results[i].name);
-            res1.textContent = info.results[i].name;
-            res2.textContent = info.results[i].description;
-        }
-    }
-})
-})
-
-
-// --header 'Cookie: sessionid=b2jsdlnwb6qzgwhckhyyuunsp184q2n7' \
-// --data-raw ''
-// 10 abs
-// 9 legs
-// 13 shoulders
-// 8 arms
-// 11 chest
-// 12 back
-// 14 calves
-// for loop
-// then if reult.category.
