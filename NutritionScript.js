@@ -16,6 +16,7 @@ let getMeal = function(){
     })
     .then(function(data){
         console.log(data)
+        generatedPlan.innerHTML = ""
         //breakfast 
         let breakfast = document.createElement("p")
         breakfast.setAttribute("class", "bold-text")
@@ -73,8 +74,8 @@ let getMeal = function(){
         disclaimer.innerHTML = "Please note: food choices provided are not the most macro friendly!"
         disclaimer.setAttribute("class", "red-text")
         generatedPlan.append(disclaimer)
-    })
 
+    })
 }
 
 
