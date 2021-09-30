@@ -5,29 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Muscle & Meals</title>
   </head>
+
   <main>
-    <div class="header">
-      <h1>Muscle Monsters (or something)</h1>
-      <p>Fitness App</p>
-    </div>
-    <div class="topnav"></div>
-  </main>
-  <body>
-    <div class="main">
-      <div class="body">
-        <button id="arms">Arms</button>
-        <button id="legs">Legs</button>
-        <button id="abs">Abs</button>
-        <button id="chest">Chest</button>
-        <button id="back">Back</button>
-        <button id="shoulder">Shoulders</button>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              About Us
+            </a>
+          </div>
+    
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-dark">Exercises</a>
+                <a class="button is-dark">Meals</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <article>
-          <h3 id="res1"></h3>
-          <p id="res2"></p>
-      </article>
+    </nav>
+    <!-- MAIN PAGE -->
+    <section class="hero is-link is-fullheight-with-navbar">
+      <div class="hero-body">
+        <p class="title">
+          Fullheight hero with navbar
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <body>
+    <!-- EXERCISES SECTION -->
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <p class="title">
+            Fullheight hero EXERCISES
+          </p>
+          <p class="subtitle">
+            Choose a body part that you want to work on.
+          </p>
+          <div class="buttons are-small" class="body">
+            <button class="button is-dark is-rounded is-focused" id="arms">Arms</button>
+            <button class="button is-dark is-rounded is-focused" id="legs">Legs</button>
+            <button class="button is-dark is-rounded is-focused" id="abs">Abs</button>
+            <button class="button is-dark is-rounded is-focused" id="chest">Chest</button>
+            <button class="button is-dark is-rounded is-focused" id="back">Back</button>
+            <button class="button is-dark is-rounded is-focused" id="shoulder">Shoulders</button>
+          </div>
+          <article>
+              <h3 id="res1"></h3>
+              <p id="res2"></p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-danger">
+            <p class="title">Wide tile</p>
+            <p class="subtitle">Aligned with the right tile</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+<!-- MEALS SECTION -->
+    <section class="hero is-link is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <p class="title">
+            Fullheight hero MEALS
+          </p>
+          <p class="subtitle">
+            Fullheight subtitle MEALS
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- UPDATE FOOTER ITEMS -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+    
+
+
+
+    <!-- OLD LAYOUT FOR REFERENCE -->
+    <div class="row">
+      <div class="main">
+        <div class="row">
+          <div class="body">
+            <label for="body-list label">Choose a body part you would like to focus on :</label>
+            <select name="body-parts" id="body-areas" multiple>
+              <!-- https://jqueryui.com/selectable/ -->
+              <option value="Arms">Arms</option>
+              <option value="Shoulders">Shoulders</option>
+              <option value="Chest">Chest</option>
+              <option value="Back">Back</option>
+              <option value="Legs">Legs</option>
+              <option value="Abs">Abs</option>
+            </select>
+          </div>
+          <button>Submit Selections</button>
+
+        </div>
+
+        <div class="row">
+            <div class="main">
+                <div class="userInput">
+                  <h3>Body for API Objects</h3>
+                <hr>
+                <br>
+                <p>use JS to dynamically insert..</p>
+                <p>Name of Exercise</p>
+                <p>description of exercise</p>
+                <p>equipment needed</p>
+            </div>
+        </div>
+      </div>
     </div>
 
     <div class="side">
@@ -41,13 +150,16 @@
         </div>
 
         <div class="generatedMeal">Enter your daily calorie intake and hit submit for some food options!</div>
+
             <div class="row"> 
             <div class="side">
             <div class="exercise-img"></div>
           </div>
         </div>
+
     </div>
-    <script src="./script.js"></script>
+
+    </div>
     <script src="NutritionScript.js"></script>
   </body>
 </html>
