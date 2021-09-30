@@ -7,49 +7,28 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-
   <main>
     <div class="header">
       <h1>Muscle Monsters (or something)</h1>
       <p>Fitness App</p>
     </div>
-
     <div class="topnav"></div>
   </main>
-
   <body>
-    <div class="row">
-      <div class="main">
-        <div class="row">
-          <div class="body">
-            <label for="body-list label">Choose a body part you would like to focus on :</label>
-            <select name="body-parts" id="body-areas" multiple>
-              <!-- https://jqueryui.com/selectable/ -->
-              <option value="Arms">Arms</option>
-              <option value="Shoulders">Shoulders</option>
-              <option value="Chest">Chest</option>
-              <option value="Back">Back</option>
-              <option value="Legs">Legs</option>
-              <option value="Abs">Abs</option>
-            </select>
-          </div>
-          <button>Submit Selections</button>
-
-        </div>
-
-        <div class="row">
-            <div class="main">
-                <div class="userInput">
-                  <h3>Body for API Objects</h3>
-                <hr>
-                <br>
-                <p>use JS to dynamically insert..</p>
-                <p>Name of Exercise</p>
-                <p>description of exercise</p>
-                <p>equipment needed</p>
-            </div>
-        </div>
+    <div class="main">
+      <div class="body">
+        <button id="arms">Arms</button>
+        <button id="legs">Legs</button>
+        <button id="abs">Abs</button>
+        <button id="chest">Chest</button>
+        <button id="back">Back</button>
+        <button id="shoulder">Shoulders</button>
+        <button id="calves">Calves</button>
       </div>
+      <article>
+          <h3 id="res1"></h3>
+          <p id="res2"></p>
+      </article>
     </div>
 
     <div class="side">
@@ -63,16 +42,13 @@
         </div>
 
         <div class="generatedMeal">Enter your daily calorie intake and hit submit for some food options!</div>
-
             <div class="row"> 
             <div class="side">
             <div class="exercise-img"></div>
           </div>
         </div>
-
     </div>
-
-    </div>
+    <script src="./script.js"></script>
     <script src="NutritionScript.js"></script>
   </body>
 </html>
