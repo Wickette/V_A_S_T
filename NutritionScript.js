@@ -79,3 +79,4 @@ let getMeal = function(){
 
 
 calorieSubmit.addEventListener("click", getMeal)
+
