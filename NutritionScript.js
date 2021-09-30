@@ -1,11 +1,14 @@
     let generatedPlan = document.querySelector(".generatedMeal")
     let userCalorieInput = document.querySelector(".calorieInput")
     let calorieSubmit = document.querySelector(".calorie-submit")
+    let mealHistory = document.querySelector(".meal-history")
+
+
 
 console.log(userCalorieInput.value)
 
-
 let getMeal = function(){
+
     let mealPlanURL = "https://api.spoonacular.com/mealplanner/generate/?apiKey=cdbf01ac8e2040d48cb558f6c520cc89&targetCalories="+ userCalorieInput.value.trim() +"&timeFrame=day"
     fetch(mealPlanURL)
     .then(function(response){
@@ -74,9 +77,28 @@ let getMeal = function(){
         disclaimer.innerHTML = "Please note: food choices provided are not the most macro friendly!"
         disclaimer.setAttribute("class", "red-text")
         generatedPlan.append(disclaimer)
-
     })
 }
 
+function save (){
+    let new_data = userCalorieInput.value.trim();
+    if(localStorage.getItem("data") == null){
+        localStorage.setItem("data", "[]");
+    }
+    let old_data = JSON.parse(localStorage.getItem("data"));
+    old_data.push(new_data);
+    localStorage.setItem("data", JSON.stringify(old_data));
+}
 
-calorieSubmit.addEventListener("click", getMeal)
+function view(){
+        mealHistory.innerHTML = "Past calorie searches: "
+        let historyList = document.createElement("li");
+        historyList.innerHTML = JSON.parse(localStorage.getItem("data"));  
+        mealHistory.append(historyList);  
+}
+
+calorieSubmit.addEventListener("click", function(){
+    getMeal();
+    save();
+    view();
+})
