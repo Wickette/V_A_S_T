@@ -9,6 +9,13 @@
     text-align: center;
     background: turquoise;
 }
+
+.navbar.is-black,
+.hero.is-white.is-fullheight-with-navbar,
+.hero-body{
+    border-bottom: 2px solid red   
+}
+
 .topnav{
     display: flex;
     justify-content: space-around;
@@ -34,8 +41,15 @@
 .user{
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 150px;
   }
+
+  .user .button{
+      margin-top: 15px;
+  }
+
+
+
 .side .side-title{
     text-align: center;
 }
@@ -71,3 +85,30 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.title-end{
+    padding-top: 70px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.button{
+    padding: 10px;
+
+}
+
+.company-clients img{
+    margin: 55px;
+}
+  
+  .fa-github {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #000000;
+    color: white;
+  }

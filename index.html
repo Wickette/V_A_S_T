@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="./favicon/MandM.png">
     
     <title>Muscles & Meals</title>
@@ -19,11 +20,7 @@
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-start">
 
-            <!-- <a class="navbar-item">About Us</a> -->
-            <a href="#about-us" class="navbar-item">About Us</a>
-
-
-            <!-- <a class="navbar-item">Subscribe</a> -->
+            <a href="#company-facts" class="navbar-item">Company Facts</a>
             <a href="#subscribe" class="navbar-item">Subscribe</a>
 
 
@@ -33,9 +30,7 @@
             <div class="navbar-item">
               <div class="buttons">
 
-                <!-- <a class="button is-dark">Exercises</a> -->
                 <a href="#exercise-generator" class="button is-dark">Exercises</a>
-                <!-- <a class="button is-dark">Meals</a> -->
                 <a href="#meal-generator" class="button is-dark">Meals</a>
 
               </div>
@@ -46,22 +41,34 @@
     </nav>
     <!-- MAIN PAGE -->
     <section class="hero is-white is-fullheight-with-navbar">
-        <img src="./Background 3@2x.jpg"">
+        <img src="./Background 3@2x.jpg">
     </section>
   </main>
 
-<!-- ABOUT US SECTION -->
-<section id="about-us" class="hero is-dark is-fullheight">
+
+<section id="company-facts" class="hero is-dark is-fullheight">
   <div class="hero-body">
     <div class="">
-      <p class="title">ABOUT US</p>
+      <p class="title">Company Facts</p>
       <p class="subtitle">
-This is where we talk about ourselves and the company facts</p>
+        We help our users meet their health and fitness goals. Some of our clients include
+      </p>  
+      <section class="company-clients">
+      <img src="./images/goodlife fitness.png" alt="" width=150px height=150px>
+      <img src="./images/davidlloyds.jpeg" alt="" width=150px height=150px>
+      <img src="./images/golds gym.png" alt="" width=150px height=150px>
+      <img src="./images/gym company.png" alt="" width=150px height=150px>
+      <img src="./images/virginactive.png" alt="" width=150px height=150px>
+    </section>
+    <p class="subtitle">
+      V_A_S_T Technologies is an innovative Canadian health company and we strive to be a world leader in the health and wellness space.
+      We give our users the power of effortless exercising, helpful calorie restricted meals that will give our users detailed information to improve their health.
+      Our stand-alone, patented fitness and health system doesn’t rely on users being specifically in the gym, making it convenient, highly scalable, and inexpensive.
+    </p>  
     </div>
 
   </div>
 </section>
-
 
     <!-- EXERCISES SECTION -->
     <section id="exercise-generator" class="hero is-black is-fullheight">
@@ -104,7 +111,7 @@ This is where we talk about ourselves and the company facts</p>
             Enter your daily calorie intake and hit submit for some food options!
           </p>
         <div class="user">
-          <input class="input is-success is-small calorieInput" type="text" maxlength="5" placeholder="Enter a number of calories">
+          <input class="input is-success is-small calorieInput" type="text" maxlength="5" placeholder="Enter calories">
           <button class="button is-black is-rounded is-focused calorie-submit" id="legs">Submit</button>
         </div>
         </div>
@@ -125,11 +132,10 @@ This is where we talk about ourselves and the company facts</p>
 
 <!-- SUBSCRIBE -->
 <section>
-  <section id="subscribe">
+  <section id="subscribe" class="hero is-light is-medium">
     <div class="content has-text-centered">
-      <p class="title">Subscribe</p>
+      <p class="title-end">Subscribe to our Newsletter</p>
         <p class="Contact-details">
-        If you would like to subscribe to our emails about our regular updates, please fill the form below</pre></p>
         <form>
           <ul>
 
@@ -138,7 +144,7 @@ This is where we talk about ourselves and the company facts</p>
 
           </ul>
           <div class="text-center">
-            <button class="subButton" type="submit">SEND</button>
+            <button class="subButton" type="submit">SUBSCRIBE</button>
           </div>
         </form>
     
@@ -150,13 +156,19 @@ This is where we talk about ourselves and the company facts</p>
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Muscle & Meals</strong> by <a href="#">V_A_S_T</a>. Copyright &copy 2021 V_A_S_T Tech. All rights reserved.
+          <small>BULMA.io for CSS</small></p>
+          <p>
+          <strong>Muscles & Meals</strong> by <a href="#">V_A_S_T</a> Technologies. Copyright &copy 2021 V_A_S_T Tech. All rights reserved.
+        <p>
+          <a href="https://github.com/Wickette/V_A_S_T" class="fa fa-github"></a>
         </p>
-        <a href="#about-us"> About Us </a>
-        <a href="#company-facts"> Company Facts </a>
-        <a href="#hero is-success is-fullheight"> Exercises </a>
-        <a href="#hero is-link is-fullheight"> Meals </a>
-      </div>
+        <p>
+        <a href="#company-facts" class="button is-light">Company Facts </a>
+        <a href="#exercise-generator" class="button is-light">Exercises</a>
+        <a href="#meal-generator" class="button is-light">Meals</a>
+      </p>
+    </div>
+
     </footer>
 
     <script src="./assets/js/script.js"></script>
