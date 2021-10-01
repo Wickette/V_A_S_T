@@ -9,7 +9,7 @@ function save (){
 }
 
 function view(){
-        sub.innerHTML = "Thank you for subscribing" + " " + localStorage.getItem("data");  
+        sub.innerHTML = "Thank you for subscribing" + " " + localStorage.getItem("email");  
 }
 
 subBtn.addEventListener("click", function(){
