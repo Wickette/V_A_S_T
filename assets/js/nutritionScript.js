@@ -75,25 +75,6 @@ let getMeal = function(){
 }
 
 
-function save (){
-    let new_data = userCalorieInput.value.trim();
-    if(localStorage.getItem("data") == null){
-        localStorage.setItem("data", "[]");
-    }
-    let old_data = JSON.parse(localStorage.getItem("data"));
-    old_data.push(new_data);
-    localStorage.setItem("data", JSON.stringify(old_data));
-}
-
-function view(){
-        mealHistory.innerHTML = "Past calorie searches: "
-        let historyList = document.createElement("li");
-        historyList.innerHTML = JSON.parse(localStorage.getItem("data"));  
-        mealHistory.append(historyList);  
-}
-
 calorieSubmit.addEventListener("click", function(){
     getMeal();
-    save();
-    view();
 })
