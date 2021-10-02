@@ -7,173 +7,149 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="./favicon/MandM.png">
+    <link rel="icon" type="image/png" href="./assets/images/logo/favicon/MandM.png">
     
     <title>Muscles & Meals</title>
   </head>
-  <body>
+<body>
 
-  <main>
-    <!-- NAVBAR -->
-    <nav class="navbar is-black">
-      <div class="container">
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-start">
-
-            <a href="#company-facts" class="navbar-item">Company Facts</a>
-            <a href="#subscribe" class="navbar-item">Subscribe</a>
-
-
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-
-                <a href="#exercise-generator" class="button is-dark">Exercises</a>
-                <a href="#meal-generator" class="button is-dark">Meals</a>
-
-              </div>
+<!-- NAVBAR -->
+<main>
+  <nav class="navbar is-black">
+    <div class="container">
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#company-facts" class="navbar-item">Company Facts</a>
+          <a href="#subscribe" class="navbar-item">Subscribe</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="#exercise-generator" class="button is-dark">Exercises</a>
+              <a href="#meal-generator" class="button is-dark">Meals</a>
             </div>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- MAIN PAGE -->
-    <section class="hero is-white is-fullheight-with-navbar">
-        <img src="./Background 3@2x.jpg">
-    </section>
-  </main>
+    </div>
+  </nav>
+  <!-- MAIN PAGE -->
+  <section class="hero is-white is-fullheight-with-navbar">
+    <img src="./assets/images/logo/Background 3@2x.jpg">
+  </section>
+</main>
 
 
 <section id="company-facts" class="hero is-dark is-fullheight">
   <div class="hero-body">
     <div class="">
       <p class="title">Company Facts</p>
-      <p class="subtitle">
-        We help our users meet their health and fitness goals. Some of our clients include
-      </p>  
+      <p class="subtitle">We help our users meet their health and fitness goals. Some of our clients include</p>  
       <section class="company-clients">
-      <img src="./images/goodlife fitness.png" alt="" width=150px height=150px>
-      <img src="./images/davidlloyds.jpeg" alt="" width=150px height=150px>
-      <img src="./images/golds gym.png" alt="" width=150px height=150px>
-      <img src="./images/gym company.png" alt="" width=150px height=150px>
-      <img src="./images/virginactive.png" alt="" width=150px height=150px>
-    </section>
-    <p class="subtitle">
-      V_A_S_T Technologies is an innovative Canadian health company and we strive to be a world leader in the health and wellness space.
-      We give our users the power of effortless exercising, helpful calorie restricted meals that will give our users detailed information to improve their health.
-      Our stand-alone, patented fitness and health system doesn’t rely on users being specifically in the gym, making it convenient, highly scalable, and inexpensive.
-    </p>  
+        <img src="./assets/images/brands/goodlife fitness.png" alt="" width=150px height=150px>
+        <img src="./assets/images/brands/davidlloyds.jpeg" alt="" width=150px height=150px>
+        <img src="./assets/images/brands/golds gym.png" alt="" width=150px height=150px>
+        <img src="./assets/images/brands/gym company.png" alt="" width=150px height=150px>
+        <img src="./assets/images/brands/virginactive.png" alt="" width=150px height=150px>
+      </section>
+      <p class="subtitle">
+      V_A_S_T Technologies is an innovative Canadian health company and we strive to be a world leader in the health and wellness space. We give our users the power of effortless exercising, helpful calorie restricted meals that will give our users detailed information to improve their health. Our stand-alone, patented fitness and health system doesn’t rely on users being specifically in the gym, making it convenient, highly scalable, and inexpensive.
+      </p>  
     </div>
-
   </div>
 </section>
 
-    <!-- EXERCISES SECTION -->
-    <section id="exercise-generator" class="hero is-black is-fullheight">
-      <div class="hero-body">
-        <div class="">
-          <p class="title">
-            WORKOUT
-          </p>
-          <p class="subtitle">
-            Choose a body part that you want to work on
-          </p>
-          <div class="buttons are-small" class="body">
-            <button class="button is-dark is-rounded is-focused" id="arms">Arms</button>
-            <button class="button is-dark is-rounded is-focused" id="legs">Legs</button>
-            <button class="button is-dark is-rounded is-focused" id="abs">Abs</button>
-            <button class="button is-dark is-rounded is-focused" id="chest">Chest</button>
-            <button class="button is-dark is-rounded is-focused" id="back">Back</button>
-            <button class="button is-dark is-rounded is-focused" id="shoulder">Shoulders</button>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-dark">
-            <div class="content">
-              <p class="title">Exercise</p>
-              <!-- Content -->
-              <div class="title" id="res1"> </div>
-              <div class="subtitle" id="res2"></div>
-            </div>
-          </article>
-        </div>
+<!-- EXERCISES SECTION -->
+<section id="exercise-generator" class="hero is-black is-fullheight">
+  <div class="hero-body">
+    <div class="">
+      <p class="title">WORKOUT</p>
+      <p class="subtitle">Choose a body part that you want to work on</p>
+      <div class="buttons are-small" class="body">
+        <button class="button is-dark is-rounded is-focused" id="arms">Arms</button>
+        <button class="button is-dark is-rounded is-focused" id="legs">Legs</button>
+        <button class="button is-dark is-rounded is-focused" id="abs">Abs</button>
+        <button class="button is-dark is-rounded is-focused" id="chest">Chest</button>
+        <button class="button is-dark is-rounded is-focused" id="back">Back</button>
+        <button class="button is-dark is-rounded is-focused" id="shoulder">Shoulders</button>
       </div>
-    </section>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-dark">
+        <div class="content">
+          <p class="title">Exercise</p>
+          <!-- Content -->
+          <div class="title" id="res1"></div>
+          <div class="subtitle" id="res2"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
     
 <!-- MEALS SECTION -->
 <section id="meal-generator" class="hero is-dark is-fullheight">
-      <div class="hero-body">
-        <div class="">
-          <p class="title">MEAL GENERATOR</p>
-          <p class="subtitle">
-            Enter your daily calorie intake and hit submit for some food options!
-          </p>
-        <div class="user">
-          <input class="input is-success is-small calorieInput" type="text" maxlength="5" placeholder="Enter calories">
-          <button class="button is-black is-rounded is-focused calorie-submit" id="legs">Submit</button>
-        </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-black">
-            <p class="title meal-container">Daily Meals</p>
-            <p class="subtitle"></p>
-            <div class="content">
-              <!-- Content -->
-              <div class="generatedMeal"></div>
-            </div>
-            <div class="meal-history"></div>
-          </article>
-        </div>
+  <div class="hero-body">
+    <div class="">
+      <p class="title">MEAL GENERATOR</p>
+      <p class="subtitle">Enter your daily calorie intake and hit submit for some food options!</p>
+      <div class="user">
+        <input class="input is-success is-small calorieInput" type="text" maxlength="5" placeholder="Enter calories">
+        <button class="button is-black is-rounded is-focused calorie-submit" id="legs">Submit</button>
       </div>
-    </section>
-
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <p class="title meal-container">Daily Meals</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <!-- Content -->
+          <div class="generatedMeal"></div>
+        </div>
+        <div class="meal-history"></div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- SUBSCRIBE -->
-<section>
-  <section id="subscribe" class="hero is-light is-medium">
-    <div class="content has-text-centered">
-      <p class="title-end">Subscribe to our Newsletter</p>
-        <p class="Contact-details">
-        <form>
-          <ul>
-
-              <label class="text-right" for="email">E-mail:</label>
-              <input type="text" id="email" name="user-email">
-
-          </ul>
-          <div class="text-center">
-            <button class="subButton" type="submit">SUBSCRIBE</button>
-          </div>
-        </form>
-    
-    </div>
-  </section>
+<section id="subscribe" class="hero is-light is-medium">
+  <div class="content has-text-centered">
+    <p class="title-end">Subscribe to our Newsletter</p>
+    <p class="Contact-details"></p>
+    <form>
+      <ul>
+        <label class="text-right" for="email">E-mail:</label>
+        <input type="text" id="email" name="user-email">
+      </ul>
+      <div class="text-center">
+        <button class="subButton" type="submit">SUBSCRIBE</button>
+      </div>
+    </form>
+  </div>
 </section>
 
 <!-- UPDATE FOOTER ITEMS -->
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <small>BULMA.io for CSS</small></p>
-          <p>
-          <strong>Muscles & Meals</strong> by <a href="#">V_A_S_T</a> Technologies. Copyright &copy 2021 V_A_S_T Tech. All rights reserved.
-        <p>
-          <a href="https://github.com/Wickette/V_A_S_T" class="fa fa-github"></a>
-        </p>
-        <p>
-        <a href="#company-facts" class="button is-light">Company Facts </a>
-        <a href="#exercise-generator" class="button is-light">Exercises</a>
-        <a href="#meal-generator" class="button is-light">Meals</a>
-      </p>
-    </div>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <small>BULMA.io for CSS</small>
+    </p>
+    <strong>Muscles & Meals</strong> by <a href="#">V_A_S_T</a> Technologies. Copyright &copy 2021 V_A_S_T Tech. All rights reserved.
+    <p>
+      <a href="https://github.com/Wickette/V_A_S_T" class="fa fa-github"></a>
+    </p>
+    <p>
+      <a href="#company-facts" class="button is-light">Company Facts</a>
+      <a href="#exercise-generator" class="button is-light">Exercises</a>
+      <a href="#meal-generator" class="button is-light">Meals</a>
+    </p>
+  </div>
+</footer>
 
-    </footer>
-
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/nutritionScript.js"></script>
-    <script src="./assets/js/localStorageSub.js"></script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/nutritionScript.js"></script>
+  <script src="./assets/js/localStorageSub.js"></script>
+</body>
 
 </html>
