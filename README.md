@@ -39,5 +39,7 @@ spoonacular API for meals (https://rapidapi.com/spoonacular/api/recipe-food-nutr
 
 https://wickette.github.io/V_A_S_T/
 
-## Screenshot
+## Mock-up
+
+![Muscles and Meals](https://user-images.githubusercontent.com/90168071/135881329-115221af-3283-4aae-a7e0-0c9e17728a61.gif)
 
